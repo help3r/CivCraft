@@ -16,7 +16,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from AVRGAMING LLC.
  */
-package com.avrgaming.civcraft.command.civ;
+package civ.avrgaming.civcraft.command.en.civ;
 
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -45,7 +45,7 @@ import com.avrgaming.civcraft.sessiondb.SessionEntry;
 import com.avrgaming.civcraft.util.CivColor;
 import com.avrgaming.civcraft.war.War;
 
-public class CivCommand extends CommandBase {
+public class CivCommand_EN extends CommandBase {
 
 	@Override
 	public void init() {		
@@ -292,17 +292,17 @@ public class CivCommand extends CommandBase {
 	}
 	
 	public void dip_cmd() {
-		CivDiplomacyCommand cmd = new CivDiplomacyCommand();	
+		CivDiplomacyCommand_EN cmd = new CivDiplomacyCommand_EN();	
 		cmd.onCommand(sender, null, "dip", this.stripArgs(args, 1));
 	}
 	
 	public void group_cmd() {
-		CivGroupCommand cmd = new CivGroupCommand();	
+		CivGroupCommand_EN cmd = new CivGroupCommand_EN();	
 		cmd.onCommand(sender, null, "group", this.stripArgs(args, 1));	
 	}
 	
 	public void set_cmd() {
-		CivSetCommand cmd = new CivSetCommand();	
+		CivSetCommand_EN cmd = new CivSetCommand_EN();	
 		cmd.onCommand(sender, null, "set", this.stripArgs(args, 1));	
 	}
 	
@@ -358,12 +358,12 @@ public class CivCommand extends CommandBase {
 	}
 	
 	public void gov_cmd() {
-		CivGovCommand cmd = new CivGovCommand();	
+		CivGovCommand_EN cmd = new CivGovCommand_EN();	
 		cmd.onCommand(sender, null, "gov", this.stripArgs(args, 1));	
 	}
 	
 	public void research_cmd() {
-		CivResearchCommand cmd = new CivResearchCommand();	
+		CivResearchCommand_EN cmd = new CivResearchCommand_EN();	
 		cmd.onCommand(sender, null, "research", this.stripArgs(args, 1));	
 	}
 	
@@ -398,9 +398,9 @@ public class CivCommand extends CommandBase {
 		
 		Civilization civ = getNamedCiv(1);
 		if (sender instanceof Player) {
-			CivInfoCommand.show(sender, getResident(), civ);
+			CivInfoCommand_EN.show(sender, getResident(), civ);
 		} else {
-			CivInfoCommand.show(sender, null, civ);
+			CivInfoCommand_EN.show(sender, null, civ);
 		}
 	}
 	
@@ -472,7 +472,7 @@ public class CivCommand extends CommandBase {
 	}
 	
 	public void info_cmd() throws CivException {
-		CivInfoCommand cmd = new CivInfoCommand();	
+		CivInfoCommand_EN cmd = new CivInfoCommand_EN();	
 		cmd.onCommand(sender, null, "info", this.stripArgs(args, 1));		
 	}
 	

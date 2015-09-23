@@ -16,7 +16,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from AVRGAMING LLC.
  */
-package com.avrgaming.civcraft.command.camp;
+package civ.avrgaming.civcraft.command.en.camp;
 
 import com.avrgaming.civcraft.camp.Camp;
 import com.avrgaming.civcraft.command.CommandBase;
@@ -26,7 +26,7 @@ import com.avrgaming.civcraft.exception.CivException;
 import com.avrgaming.civcraft.main.CivMessage;
 import com.avrgaming.civcraft.util.CivColor;
 
-public class CampUpgradeCommand extends CommandBase {
+public class CampUpgradeCommand_EN extends CommandBase {
 	@Override
 	public void init() {
 		command = "/camp upgrade";

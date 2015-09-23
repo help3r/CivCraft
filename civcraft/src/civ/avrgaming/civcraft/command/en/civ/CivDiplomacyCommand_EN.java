@@ -16,7 +16,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from AVRGAMING LLC.
  */
-package com.avrgaming.civcraft.command.civ;
+package civ.avrgaming.civcraft.command.en.civ;
 
 
 import java.util.HashSet;
@@ -38,7 +38,7 @@ import com.avrgaming.civcraft.threading.tasks.CivQuestionTask;
 import com.avrgaming.civcraft.util.CivColor;
 import com.avrgaming.civcraft.war.War;
 
-public class CivDiplomacyCommand extends CommandBase {
+public class CivDiplomacyCommand_EN extends CommandBase {
 	public static final long INVITE_TIMEOUT = 30000; //30 seconds
 
 	@Override
@@ -162,7 +162,7 @@ public class CivDiplomacyCommand extends CommandBase {
 	}
 	
 	public void gift_cmd() throws CivException {
-		CivDiplomacyGiftCommand cmd = new CivDiplomacyGiftCommand();	
+		CivDiplomacyGiftCommand_EN cmd = new CivDiplomacyGiftCommand_EN();	
 		if (War.isWarTime()) {
 			throw new CivException("You cannot use this diplomacy command while it is WarTime.");
 		}

@@ -16,7 +16,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from AVRGAMING LLC.
  */
-package com.avrgaming.civcraft.command.civ;
+package civ.avrgaming.civcraft.command.en.civ;
 
 import org.bukkit.ChatColor;
 
@@ -33,7 +33,7 @@ import com.avrgaming.civcraft.threading.tasks.CivQuestionTask;
 import com.avrgaming.civcraft.util.CivColor;
 import com.avrgaming.civcraft.war.War;
 
-public class CivDiplomacyGiftCommand extends CommandBase {
+public class CivDiplomacyGiftCommand_EN extends CommandBase {
 
 	@Override
 	public void init() {

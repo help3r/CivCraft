@@ -16,7 +16,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from AVRGAMING LLC.
  */
-package com.avrgaming.civcraft.command.civ;
+package civ.avrgaming.civcraft.command.en.civ;
 
 import java.util.ArrayList;
 
@@ -32,7 +32,7 @@ import com.avrgaming.civcraft.object.Town;
 import com.avrgaming.civcraft.structure.TownHall;
 import com.avrgaming.civcraft.util.CivColor;
 
-public class CivResearchCommand extends CommandBase {
+public class CivResearchCommand_EN extends CommandBase {
 
 	@Override
 	public void init() {

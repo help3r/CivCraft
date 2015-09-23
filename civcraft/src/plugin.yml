@@ -1,22 +1,39 @@
 name: CivCraft
 main: com.avrgaming.civcraft.main.CivCraft
-version: 1.5
+version: 1.6
 
 commands:
+    ë§ˆì„:
+        aliases:
     town:
         aliases: [t]
+
     plot:
         aliases: [p]
+
+    ?‚¬?š©?:
+        aliases:
     resident:
         aliases: [res]
+
     dbg:
         aliases: []
+
+    ?ˆ˜?½:
+        aliases:
     accept:
         aliases: [yes]
+
+    ê±°ì ˆ:
+        aliases:
     deny:
         aliases: [no]
+
+    êµ?ê°?:
+        aliases:
     civ:
         aliases:
+
     tc:
         aliases:
     cc:
@@ -27,28 +44,50 @@ commands:
         aliases:
     ad:
         aliases:
+
+    ê±´ì„¤:
+        aliases:
     build:
         aliases:
+
     market:
         aliases: [m]
     select:
         aliases:
+
+    ?ˆ:
+        aliases: [?”?•¡]
     econ:
         aliases: [money]
+
+    ì§?ë¶?:
+        aliases: [?†¡ê¸?]
     pay:
         aliases:
+
     here:
+        aliases:
+
+    ìº í”„:
         aliases:
     camp:
         aliases:
+
     report:
         aliases:
     vote:
         aliases: [v]
+
+    ê±°ë˜:
+        aliases:
     trade:
+        aliases:
+
+    ??‚´:
         aliases:
     kill:
         aliases:
+
     team:
         aliases:
     sb:

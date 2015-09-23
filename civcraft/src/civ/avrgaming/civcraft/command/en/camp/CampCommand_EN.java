@@ -16,7 +16,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from AVRGAMING LLC.
  */
-package com.avrgaming.civcraft.command.camp;
+package civ.avrgaming.civcraft.command.en.camp;
 
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
@@ -34,7 +34,7 @@ import com.avrgaming.civcraft.object.Resident;
 import com.avrgaming.civcraft.questions.JoinCampResponse;
 import com.avrgaming.civcraft.util.CivColor;
 
-public class CampCommand extends CommandBase {
+public class CampCommand_EN extends CommandBase {
 	public static final long INVITE_TIMEOUT = 30000; //30 seconds
 
 	@Override
@@ -53,7 +53,7 @@ public class CampCommand extends CommandBase {
 	}
 	
 	public void upgrade_cmd() {
-		CampUpgradeCommand cmd = new CampUpgradeCommand();	
+		CampUpgradeCommand_EN cmd = new CampUpgradeCommand_EN();	
 		cmd.onCommand(sender, null, "camp", this.stripArgs(args, 1));
 	}
 	

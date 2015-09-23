@@ -16,7 +16,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from AVRGAMING LLC.
  */
-package com.avrgaming.civcraft.command.civ;
+package civ.avrgaming.civcraft.command.en.civ;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ import com.avrgaming.civcraft.sessiondb.SessionEntry;
 import com.avrgaming.civcraft.util.CivColor;
 import com.avrgaming.civcraft.util.DecimalHelper;
 
-public class CivInfoCommand extends CommandBase {
+public class CivInfoCommand_EN extends CommandBase {
 
 	@Override
 	public void init() {

@@ -23,7 +23,6 @@ import java.sql.SQLException;
 import org.bukkit.ChatColor;
 
 import com.avrgaming.civcraft.command.CommandBase;
-import com.avrgaming.civcraft.command.civ.CivInfoCommand;
 import com.avrgaming.civcraft.config.CivSettings;
 import com.avrgaming.civcraft.config.ConfigGovernment;
 import com.avrgaming.civcraft.config.ConfigTech;
@@ -38,6 +37,8 @@ import com.avrgaming.civcraft.object.Relation.Status;
 import com.avrgaming.civcraft.object.Resident;
 import com.avrgaming.civcraft.object.Town;
 import com.avrgaming.civcraft.util.CivColor;
+
+import civ.avrgaming.civcraft.command.en.civ.CivInfoCommand_EN;
 
 public class AdminCivCommand extends CommandBase {
 
@@ -197,7 +198,7 @@ public class AdminCivCommand extends CommandBase {
 	public void info_cmd() throws CivException {
 		Civilization civ = getNamedCiv(1);
 		
-		CivInfoCommand cmd = new CivInfoCommand();	
+		CivInfoCommand_EN cmd = new CivInfoCommand_EN();	
 		cmd.senderCivOverride = civ;
 		cmd.onCommand(sender, null, "info", this.stripArgs(args, 2));	
 	}

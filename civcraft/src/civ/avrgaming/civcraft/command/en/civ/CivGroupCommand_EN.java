@@ -16,7 +16,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from AVRGAMING LLC.
  */
-package com.avrgaming.civcraft.command.civ;
+package civ.avrgaming.civcraft.command.en.civ;
 
 import org.bukkit.entity.Player;
 
@@ -29,7 +29,7 @@ import com.avrgaming.civcraft.object.Resident;
 import com.avrgaming.civcraft.permission.PermissionGroup;
 import com.avrgaming.civcraft.util.CivColor;
 
-public class CivGroupCommand extends CommandBase {
+public class CivGroupCommand_EN extends CommandBase {
 
 	@Override
 	public void init() {
