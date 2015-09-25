@@ -45,6 +45,9 @@ import com.avrgaming.civcraft.command.SelectCommand;
 import com.avrgaming.civcraft.command.TradeCommand;
 import com.avrgaming.civcraft.command.VoteCommand;
 import com.avrgaming.civcraft.command.admin.AdminCommand;
+import com.avrgaming.civcraft.command.camp.CampCommand;
+import com.avrgaming.civcraft.command.civ.CivChatCommand;
+import com.avrgaming.civcraft.command.civ.CivCommand;
 import com.avrgaming.civcraft.command.debug.DebugCommand;
 import com.avrgaming.civcraft.command.market.MarketCommand;
 import com.avrgaming.civcraft.command.plot.PlotCommand;
@@ -116,10 +119,6 @@ import com.avrgaming.global.perks.PlatinumManager;
 import com.avrgaming.global.scores.CalculateScoreTimer;
 import com.avrgaming.moblib.MobLib;
 import com.avrgaming.sls.SLSManager;
-
-import civ.avrgaming.civcraft.command.en.camp.CampCommand_EN;
-import civ.avrgaming.civcraft.command.en.civ.CivChatCommand_EN;
-import civ.avrgaming.civcraft.command.en.civ.CivCommand_EN;
 
 public final class CivCraft extends JavaPlugin {
 
@@ -281,41 +280,15 @@ public final class CivCraft extends JavaPlugin {
 		}
 		
 		// Init commands
-		
-		getCommand("마을").setExecutor(new TownCommand());
-		getCommand("사용자").setExecutor(new ResidentCommand());
-		getCommand("dbg").setExecutor(new DebugCommand());
-		getCommand("plot").setExecutor(new PlotCommand());
-		getCommand("수락").setExecutor(new AcceptCommand());
-		getCommand("거절").setExecutor(new DenyCommand());
-		getCommand("civ").setExecutor(new CivCommand_EN());
-		getCommand("tc").setExecutor(new TownChatCommand());
-		getCommand("cc").setExecutor(new CivChatCommand_EN());
-		//getCommand("gc").setExecutor(new GlobalChatCommand());
-		getCommand("ad").setExecutor(new AdminCommand());
-		getCommand("돈").setExecutor(new EconCommand());
-		getCommand("지불").setExecutor(new PayCommand());
-		getCommand("건설").setExecutor(new BuildCommand());
-		getCommand("market").setExecutor(new MarketCommand());
-		getCommand("select").setExecutor(new SelectCommand());
-		getCommand("here").setExecutor(new HereCommand());
-		getCommand("캠프").setExecutor(new CampCommand_EN());
-		getCommand("report").setExecutor(new ReportCommand());
-		getCommand("투표").setExecutor(new VoteCommand());
-		getCommand("trade").setExecutor(new TradeCommand());
-		getCommand("자살").setExecutor(new KillCommand());
-		getCommand("team").setExecutor(new TeamCommand());
-		
-		
 		getCommand("town").setExecutor(new TownCommand());
 		getCommand("resident").setExecutor(new ResidentCommand());
 		getCommand("dbg").setExecutor(new DebugCommand());
 		getCommand("plot").setExecutor(new PlotCommand());
 		getCommand("accept").setExecutor(new AcceptCommand());
 		getCommand("deny").setExecutor(new DenyCommand());
-		getCommand("civ").setExecutor(new CivCommand_EN());
+		getCommand("civ").setExecutor(new CivCommand());
 		getCommand("tc").setExecutor(new TownChatCommand());
-		getCommand("cc").setExecutor(new CivChatCommand_EN());
+		getCommand("cc").setExecutor(new CivChatCommand());
 		//getCommand("gc").setExecutor(new GlobalChatCommand());
 		getCommand("ad").setExecutor(new AdminCommand());
 		getCommand("econ").setExecutor(new EconCommand());
@@ -324,7 +297,7 @@ public final class CivCraft extends JavaPlugin {
 		getCommand("market").setExecutor(new MarketCommand());
 		getCommand("select").setExecutor(new SelectCommand());
 		getCommand("here").setExecutor(new HereCommand());
-		getCommand("camp").setExecutor(new CampCommand_EN());
+		getCommand("camp").setExecutor(new CampCommand());
 		getCommand("report").setExecutor(new ReportCommand());
 		getCommand("vote").setExecutor(new VoteCommand());
 		getCommand("trade").setExecutor(new TradeCommand());
